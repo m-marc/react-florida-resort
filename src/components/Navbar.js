@@ -2,25 +2,27 @@ import {useState} from 'react';
 import {Link} from 'react-router-dom';
 import logo from '../assets/logo.svg';
 import {AiOutlineMenu} from 'react-icons/ai';
+import styles from '../styles/Navbar.module.css'
+import Button from "react-bootstrap/Button";
 
 const Navbar = () => {
 
-    const [isHidden, setIsHidden] = useState(false)
+    const [isHidden, setIsHidden] = useState(true)
 
     const toggleHandler = () => {setIsHidden(!isHidden)}
 
     return (
-        <nav className={"navbar"}>
+        <nav className={styles.nav}>
             <div className="nav-center">
-                <div className="nav-header">
+                <div className={styles.header}>
                     <Link to={"/"}>
                         <img src={logo} alt={"Florida Resort"} />
                     </Link>
-                    <button className={"nav-btn"} onClick={toggleHandler}>
+                    <Button variant={"outline-primary"} onClick={toggleHandler}>
                         <AiOutlineMenu className={"nav-icon"}/>
-                    </button>
+                    </Button>
                 </div>
-                <ul className={isHidden ? "nav-links show-nav" : "nav-links"}>
+                <ul className={isHidden ? styles.menu : styles.menu__open}>
                     <li><Link to={"/"}>Home</Link></li>
                     <li><Link to={"/properties"}>Properties</Link></li>
                 </ul>

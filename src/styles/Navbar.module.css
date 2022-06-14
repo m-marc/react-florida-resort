@@ -1,0 +1,58 @@
+.nav {
+    padding: 1rem 2rem;
+    background-color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    height: 0;
+    overflow: hidden;
+    transition: height .3s ease-in-out;
+}
+
+.menu > li,
+.menu__open > li {
+    margin: 1rem 0;
+    width: fit-content;
+}
+
+.menu a,
+.menu__open a {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    color: var(--btn);
+    transition: color .3s ease;
+}
+
+.menu a:hover,
+.menu__open a:hover {
+    color: var(--btnH)
+}
+
+.menu__open {
+    height: auto;
+    overflow: hidden;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    background: 0;
+    color: var(--btn);
+    border-radius: 0;
+    cursor: pointer;
+    font-size: 2rem;
+    transition: color .3s ease;
+}
+
+.btn:hover {
+    color: var(--btnH);
+}
