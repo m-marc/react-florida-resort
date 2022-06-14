@@ -1,6 +1,7 @@
 import {AiOutlineTeam} from "react-icons/ai";
 import {TbBath, TbBed} from "react-icons/tb";
 import styles from '../styles/PropertyCard.module.css'
+import {Link} from "react-router-dom";
 
 const PropertyCard = ({property}) => {
 	return <div className={styles.card}>
@@ -27,6 +28,7 @@ const PropertyCard = ({property}) => {
 				</div>
 			</div>
 			<div className={styles.card__price}>${property.price}/nt</div>
+			<Link className={styles.card__link} to={`/properties/${property.id}`} />
 		</div>
 	</div>
 }
