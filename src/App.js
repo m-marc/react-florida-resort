@@ -1,18 +1,14 @@
 import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from "./components/Navbar"
 import {Route, Routes} from "react-router-dom"
 import Home from "./pages/Home"
 import Properties from "./pages/Properties"
 import SingleProperty from "./pages/SingleProperty"
 import Error404 from "./pages/Error404"
-import {useEffect} from "react"
-import data from "./data";
+import Footer from "./components/Footer";
 
 function App() {
-
-  useEffect(() => {
-
-  })
 
   return (
     <div className="App">
@@ -23,6 +19,7 @@ function App() {
         <Route path={"/properties/:id"} element={<SingleProperty />} />
         <Route path={"*"} element={<Error404 />} />
       </Routes>
+      <Footer text={"Florida resort. All rights reserved."} />
     </div>
   );
 }
