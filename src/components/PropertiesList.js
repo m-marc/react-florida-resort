@@ -1,20 +1,23 @@
-import {Link} from "react-router-dom";
 import {useAppSelector} from "../redux/hooks";
+import {useEffect, useState} from "react";
+import PropertyCard from "./PropertyCard";
 
 const PropertiesList = () => {
 	const {properties} = useAppSelector(state => state.properties)
+	// const [properties, setProperties] = useState([])
+	// useEffect(() => {
+	// 	fetchProperties()
+	// 		.then((properties) => setProperties(properties))
+	// },[])
 
 	const renderedProperties = properties.map(prop => (
-		<article key={prop.id}>
-			<h3>{prop.name}</h3>
-			<p>{prop.shortDescription}</p>
-			<Link to={`/properties/${prop.id}`}>View property</Link>
-		</article>
+		<PropertyCard key={prop.id} property={prop} />
 	))
 
 	return <section>
-		<h2>Properties</h2>
-		{renderedProperties}
+		<div className="properties-list">
+			{renderedProperties}
+		</div>
 	</section>
 }
 
