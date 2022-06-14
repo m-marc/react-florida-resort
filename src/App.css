@@ -41,6 +41,18 @@ body {
 
 .properties-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 3rem 2rem;
+  gap: 3rem;
+}
+
+@media (min-width: 576px) {
+  .properties-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .properties-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

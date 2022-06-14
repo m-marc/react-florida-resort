@@ -7,7 +7,7 @@ import {v1} from "uuid";
 
 export default [
 	{
-		"id": v1(),
+		"id": "3ee1e920-ec0f-11ec-adbb-19a6ba9f0cd0",
 		"name": "Palm Terrace 1C",
 		"slug": "palm-terrace-1c",
 		"area": "Fort Myers Beach",
@@ -66,7 +66,7 @@ export default [
 		}
 	},
 	{
-		"id": v1(),
+		"id": "3ee1e920-ec0f-11ec-adbb-19a6ba9f0cd1",
 		"name": "Palm Terrace 1C",
 		"slug": "palm-terrace-1c",
 		"area": "Fort Myers Beach",
@@ -125,7 +125,7 @@ export default [
 		}
 	},
 	{
-		"id": v1(),
+		"id": "3ee1e920-ec0f-11ec-adbb-19a6ba9f0cd2",
 		"name": "Palm Terrace 1C",
 		"slug": "palm-terrace-1c",
 		"area": "Fort Myers Beach",
@@ -184,7 +184,7 @@ export default [
 		}
 	},
 	{
-		"id": v1(),
+		"id": "3ee1e920-ec0f-11ec-adbb-19a6ba9f0cd3",
 		"name": "Palm Terrace 1C",
 		"slug": "palm-terrace-1c",
 		"area": "Fort Myers Beach",
@@ -243,7 +243,7 @@ export default [
 		}
 	},
 	{
-		"id": v1(),
+		"id": "3ee1e920-ec0f-11ec-adbb-19a6ba9f0cd4",
 		"name": "Palm Terrace 1C",
 		"slug": "palm-terrace-1c",
 		"area": "Fort Myers Beach",
@@ -302,7 +302,7 @@ export default [
 		}
 	},
 	{
-		"id": v1(),
+		"id": "3ee1e920-ec0f-11ec-adbb-19a6ba9f0cd5",
 		"name": "Palm Terrace 1C",
 		"slug": "palm-terrace-1c",
 		"area": "Fort Myers Beach",
