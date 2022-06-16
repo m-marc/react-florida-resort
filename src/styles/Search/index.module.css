@@ -1,0 +1,17 @@
+.card {
+    padding: 2rem 1.5rem;
+    border-radius: .5rem;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem .5rem;
+    box-shadow: var(--card-shadow);
+}
+
+.dateGroup {
+    display: flex;
+    align-items: center;
+    gap: 1rem .5rem;
+}

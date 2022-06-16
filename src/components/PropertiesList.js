@@ -1,6 +1,8 @@
 import {useAppSelector} from "../redux/hooks";
 import {useEffect, useState} from "react";
 import PropertyCard from "./PropertyCard";
+import Search from "./Search";
+import styles from '../styles/PropertyList/index.module.css'
 
 const PropertiesList = () => {
 	const {properties} = useAppSelector(state => state.properties)
@@ -14,7 +16,8 @@ const PropertiesList = () => {
 		<PropertyCard key={prop.id} property={prop} />
 	))
 
-	return <section>
+	return <section className={styles.section}>
+		<Search />
 		<div className="properties-list">
 			{renderedProperties}
 		</div>
